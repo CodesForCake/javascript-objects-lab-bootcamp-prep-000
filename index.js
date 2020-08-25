@@ -7,3 +7,9 @@ function destructivelyUpdateObjectWithKeyAndValue(object, key, value) {
   delete object[key];
   return object;
 }
+
+function deleteFromObjectByKey(object, key) {
+  var cloneObj = Object.assign({},object);
+  delete cloneObj.key;
+  return cloneObj;
+}
